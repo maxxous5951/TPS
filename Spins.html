@@ -1,0 +1,696 @@
+<!DOCTYPE html><html> 
+
+
+
+   <head>
+
+<body text="white">
+
+        <style> 
+	
+	#noprint {
+display: none;
+}
+	
+            body { background-color: #24262B; 
+text="WHITE"}
+
+
+
+		{
+	
+	"color:white";
+                font-family: Lucida Sans Unicode;
+            }
+            th { 
+                padding: 7px;
+            }
+	
+
+      
+	#image {
+		
+                
+		position: relative;
+		
+		top: -85px;
+               	right: 0px;
+                float: left;
+		width: 500px;
+       		 height: 465px;
+			
+		z-index: 99;
+		
+		
+            }	
+
+
+
+	
+	#back { background-color: #24262B; }
+
+        {
+
+		position: relative;
+        width: 500px;
+        height: 465px;
+        
+        
+ 
+        top: -540px;
+               	right: -370px;
+                
+		
+              
+               
+ 
+        z-index: 100;
+        opacity: 0.0;
+       
+           
+             }
+
+
+		
+			
+            #threeh {
+                float: left; 
+				width: 1000px;
+			font color =WHITE;
+				background-color: #24262B;
+				font-size: 12px;
+				margin-bottom:70px
+		
+		
+            
+            
+
+            } 
+						
+            tr{ 
+                text-align: center;
+            }
+            td {
+                cursor: pointer;
+            }
+            table {
+                border: 23;
+                border-collapse: collapse;
+color:#24262B;
+            }
+
+
+
+
+#wrapper {
+    margin-left:0px;
+    margin-right:auto;
+    width:900px;
+background-color: #24262B;
+}
+
+
+
+#zoom {
+                float: right; 
+							
+
+}
+
+
+
+	
+
+
+
+tr:nth-child(even){background-color: #24262B}
+
+        </style>
+
+        <title>Ranges</title>
+    </head>
+		
+	<div id="wrapper">
+	<div id="show_hide">
+    	
+
+
+
+
+		<div id="threeh">
+		
+        <table border="1">
+            <thead>
+
+	
+	<td style="color:white"onclick="minus()">---</td>
+        <td style="color:white"onclick="plus()">+++</td>
+				<tr style="color:white"> 
+					<th style="color:white" font-size="30px" bgcolor="#000080"> BTN </th>
+
+					<th style="color:white"bgcolor="#AA336A">SB vs BTN <br> MR </th>
+					<th style="color:white" bgcolor="#AA336A" style="font-size:11px" font color="white">SB vs BTN <br> Limp</th>
+					
+					
+					<th style="color:white" bgcolor="#023020">SB vs BB </th>
+					
+					<th style="color:white"bgcolor="#FF4d01">BB vs BTN <br> MR </th>
+					<th style="color:white"bgcolor="#FF4d01" style="font-size:11px">BB vs BTN <br> Limp</th>
+
+					<th style="color:white"bgcolor="#a9957b" style="font-size:11px">BB vs 2pp <br> MR</th>
+					<th style="color:white"bgcolor="#a9957b" style="font-size:11px">BB vs 2pp <br> Limp</th>
+
+					<th style="color:white"bgcolor="#ff0000">BB vs SB <br> Raise </th>
+					<th style="color:white"bgcolor="#ff0000" style="font-size:11px">BB vs SB <br>Limp </th>
+					<th style="color:white"bgcolor="white">  </th>
+
+					<th style="color:white"bgcolor="#023020"> HU SB </th>
+					
+
+					<th style="color:white"bgcolor="#FF4d01">BB vs MR </th>
+					<th style="color:white"bgcolor="#FF4d01">BB vs Limp </th>
+
+				</tr>
+			</thead>
+
+			<tbody>	
+<tr>
+		
+			<td style="color:white" bgcolor="#24262B" onclick=loadImage('3W_BU_20-25BB','1')> 20+ </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_MR_20-25BB','2')> 20+ </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_limp_20-25BB','2')> 20+ </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBB_20-25BB','1')> 20+	</td>
+						
+			<td style="color:white"onclick=loadImage('3W_BBvsBU_MR_20-25BB','2')>20+</td>
+			<td style="color:white" onclick=loadImage('3W_BBvsBU_LIMP_20-25BB','2')>20+</td>
+			<td style="color:white"onclick=loadImage('3W_BBvsBUSB_MR_20-25BB','2')>20+</td>
+			<td style="color:white"onclick=loadImage('3W_BBvs2pp_LIMP_20-25BB','2')>20+</td> 
+			<td style="color:white"onclick=loadImage('3W_BBvsSB_3x_16-25BB','2')>vs3x 16+</td>
+			
+			<td style="color:white"onclick=loadImage('3W_BBvsSB_Limp_20-25BB','2')>20+</td>	
+
+			<th bgcolor="white"></th>
+
+
+			<td style="color:white"onclick=loadImage('HU_SB_20-25BB','1')> 20+ </td>
+			
+					
+                  	<td style="color:white" onclick=loadImage('HU_BBvsMR_20-25BB','2')> 20+ </td>
+                   	<td style="color:white" onclick=loadImage('HU_BBvsLIMP_20-25BB','2')> 20+ </td>
+		</tr>
+<tr>
+		
+			<td style="color:white" bgcolor="#24262B" onclick=loadImage('3W_BU_16-20BB','1')> 16-20 </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_MR_16-20BB','2')> 16-20 </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_limp_16-20BB','2')> 16-20 </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBB_16-20BB','1')> 16-20	</td>
+						
+			<td style="color:white"onclick=loadImage('3W_BBvsBU_MR_16-20BB','2')>16-20</td>
+			<td style="color:white" onclick=loadImage('3W_BBvsBU_LIMP_16-20BB','2')>16-20</td>
+			<td style="color:white"onclick=loadImage('3W_BBvsBUSB_MR_16-20BB','2')>16-20</td>
+			<td style="color:white"onclick=loadImage('3W_BBvs2pp_LIMP_16-20BB','2')>16-20</td> 
+			<td style="color:white"onclick=loadImage('','2')></td>
+			
+			<td style="color:white"onclick=loadImage('3W_BBvsSB_Limp_16-20BB','2')>16-20</td>	
+
+			<th bgcolor="white"></th>
+
+
+			<td style="color:white"onclick=loadImage('HU_SB_16-20BB','1')> 16-20 </td>
+			
+					
+                  	<td style="color:white" onclick=loadImage('HU_BBvsMR_16-20BB','2')> 16-20 </td>
+                   	<td style="color:white" onclick=loadImage('HU_BBvsLIMP_16-20BB','2')> 16-20 </td>
+		</tr>
+		
+		<tr>
+		
+			<td style="color:white" bgcolor="#24262B" onclick=loadImage('3W_BU_14-16BB','1')> 14-16 </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_MR_14-16BB','2')> 14-16 </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_limp_14-16BB','2')> 14-16 </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBB_14-16BB','1')> 14-16	</td>
+						
+			<td style="color:white"onclick=loadImage('3W_BBvsBU_MR_14-16BB','2')>14-16</td>
+			<td style="color:white" onclick=loadImage('3W_BBvsBU_LIMP_14-16BB','2')>14-16</td>
+			<td style="color:white"onclick=loadImage('3W_BBvsBUSB_MR_14-16BB','2')>14-16</td>
+			<td style="color:white"onclick=loadImage('3W_BBvs2pp_LIMP_14-16BB','2')>14-16</td> 
+			<td style="color:white"onclick=loadImage('3W_BBvsSB_2x_14-16BB','2')>vs2x 14-16</td>
+			
+			<td style="color:white"onclick=loadImage('3W_BBvsSB_Limp_14-16BB','2')>14-16</td>	
+
+			<th bgcolor="white"></th>
+
+
+			<td style="color:white"onclick=loadImage('HU_SB_14-16BB','1')> 14-16 </td>
+			
+					
+                  	<td style="color:white" onclick=loadImage('HU_BBvsMR_14-16BB','2')> 14-16 </td>
+                   	<td style="color:white" onclick=loadImage('HU_BBvsLIMP_14-16BB','2')> 14-16 </td>
+		</tr>
+		
+		<tr>
+			<td style="color:white"onclick=loadImage('3W_BU_12-14BB','1')> 12-14 </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_MR_12-14BB','2')> 12-14 </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_limp_12-14BB','2')> 12-14 	</td>
+			
+			<td style="color:white"onclick=loadImage('3W_SBvsBB_12-14BB','1')> 12-14	</td>
+						
+			<td style="color:white"onclick=loadImage('3W_BBvsBU_MR_12-14BB','2')>12-14</td>                   	
+			<td style="color:white"onclick=loadImage('3W_BBvsBU_LIMP_12-14BB','2')>12-14</td>
+			<td style="color:white"onclick=loadImage('3W_BBvsBUSB_MR_12-14BB','2')>12-14</td>  
+			<td style="color:white"onclick=loadImage('3W_BBvs2pp_LIMP_12-14BB','2')>12-14</td>
+			<td style="color:white"onclick=loadImage('3W_BBvsSB_2x_12-14BB','2')> vs2x 12-14 </td>
+				
+			<td style="color:white"onclick=loadImage('3W_BBvsSB_Limp_12-14BB','2')>12-14</td>	
+			<th bgcolor="white"></th>
+
+
+
+
+			<td style="color:white"onclick=loadImage('HU_SB_12-14BB','1')>12-14</td>
+                  	
+					
+                  	<td style="color:white"onclick=loadImage('HU_BBvsMR_12-14BB','2')>12-14</td> 
+		 	<td style="color:white"onclick=loadImage('HU_BBvsLIMP_12-14BB','2')>12-14</td>
+
+		</tr>
+		<tr>
+ 			<td style="color:white"onclick=loadImage('3W_BU_10-12BB','1')> 10-12 </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_MR_10-12BB','2')>  10-12 </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_Limp_10-12BB','2')>  10-12 	</td>
+			
+			<td style="color:white"onclick=loadImage('3W_SBvsBB_10-12BB','1')>  10-12	</td>
+						
+			<td style="color:white"onclick=loadImage('3W_BBvsBU_MR_10-12BB','2')> 10-12</td>                   	
+			<td style="color:white"onclick=loadImage('3W_BBvsBU_LIMP_10-12BB','2')> 10-12</td>
+			<td style="color:white"onclick=loadImage('3W_BBvsBUSB_MR_10-12BB','2')> 10-12</td>  
+			<td style="color:white"onclick=loadImage('3W_BBvs2pp_LIMP_10-12BB','2')> 10-12</td>
+			<td style="color:white"onclick=loadImage('3W_BBvsSB_2x_10-12BB','2')> vs2x  10-12  </td>
+				
+			<td style="color:white"onclick=loadImage('3W_BBvsSB_Limp_10-12BB','2')>10-12</td>
+
+			<th bgcolor="white"></th>
+
+
+
+			<td style="color:white"onclick=loadImage('HU_SB_10-12BB','1')>10-12</td>
+                	
+					
+               	  	<td style="color:white"onclick=loadImage('HU_BBvsMR_10-12BB','2')>10-12</td>					
+			<td style="color:white"onclick=loadImage('HU_BBvsLIMP_10-12BB','2')>10-12</td>
+
+			
+		</tr>
+		
+		
+		<tr>
+			<td style="color:white"onclick=loadImage('3W_BU_8-10BB','1')> 8-10 </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_MR_8-10BB','2')> 8-10 </td>
+			<td style="color:white" onclick=loadImage('3W_SBvsBU_Limp_8-10BB','2')> 8-10 </td>
+			
+			<td style="color:white"onclick=loadImage('3W_SBvsBB_8-10BB','1')>  8-10	</td>
+						
+			<td style="color:white"onclick=loadImage('3W_BBvsBU_MR_8-10BB','2')> 8-10 </td>
+			<td style="color:white"onclick=loadImage('3W_BBvsBU_LIMP_8-10BB','2')> 8-10 </td>
+			<td style="color:white"onclick=loadImage('3W_BBvsBUSB_MR_8-10BB','2')> 8-10  </td>
+			<td style="color:white"onclick=loadImage('3W_BBvs2pp_LIMP_8-10BB','2')> 8-10 </td>  
+			<td style="color:white"onclick=loadImage('','2')>  </td>
+			
+			<td style="color:white"onclick=loadImage('3W_BBvsSB_Limp_8-10BB','2')> 8-10 </td>
+
+			<th bgcolor="white"></th>
+
+
+
+
+			<td style="color:white"onclick=loadImage('HU_SB_8-10BB','1')>  8-10 </td>
+                 	
+					
+			<td style="color:white"onclick=loadImage('HU_BBvsMR_0-10BB','2')> < 10 </td>
+			<td style="color:white"onclick=loadImage('HU_BBvsLIMP_8-10BB','2')> 8-10</td>
+			
+						
+		</tr>
+		<tr>
+			<td style="color:white"onclick=loadImage('3W_BU_0-8BB','1')> < 8 </td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_MR_0-8BB','2')> < 8 </td>
+			<td style="color:white" onclick=loadImage('3W_SBvsBU_Limp_0-8BB','1')>  < 8	</td>
+			
+			<td style="color:white"onclick=loadImage('3W_SBvsBB_0-8BB','1')>  < 8	</td>
+			
+			<td style="color:white"onclick=loadImage('','2')> </td>
+			
+			<td style="color:white"onclick=loadImage('3W_BBvsBU_LIMP_0-8BB','2')> < 8 </td>
+			<td style="color:white"onclick=loadImage('','2')>  </td>
+			 
+			<td style="color:white"onclick=loadImage('3W_BBvs2pp_LIMP_0-8BB','1')>  < 8	</td>
+			<td style="color:white"onclick=loadImage('','2')>  </td>
+			<td style="color:white"onclick=loadImage('3W_BBvsSB_Limp_0-8BB','1')>  < 8 </td>
+
+			<th bgcolor="white"></th>
+			
+
+
+
+
+			<td style="color:white"onclick=loadImage('HU_SB_6-8BB','1')> 6-8 </td>
+             	   	
+										
+		 	<td style="color:white"onclick=loadImage('','1')> </td>					
+			<td style="color:white"onclick=loadImage('HU_BBvsLIMP_0-8BB','2')> < 8 </td>
+			
+						
+		</tr>
+
+		<tr>
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_vsAI','2')> vs AI </td>
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			
+			<td style="color:white"onclick=loadImage('3W_BBvsBU_vsAI','2')> vs AI  </td>
+			
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			<td style="color:white"onclick=loadImage('3W_BBvsBUSB_vsAI','2')> vs AI </td>
+			 
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			<td style="color:white"onclick=loadImage('3W_BBvsSB_vsAI','2')>  vs AI </td>
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+
+			<th bgcolor="white"></th>
+			
+
+
+
+			<td style="color:white"onclick=loadImage('HU_SB_0-6BB','1')> < 6 </td>
+            	      
+					
+		  	<td style="color:white"onclick=loadImage('HU_BBvsSB_vsAI','1')> vs AI </td>
+		 	<td style="color:white"onclick=loadImage('','2')> </td>
+			
+						
+		</tr>
+<tr>
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_vs3x_16-25','2')> vs3x 16+ </td>
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			
+			<td style="color:white"onclick=loadImage('3W_BBvsBU_3x_16-25BB','2')> vs3x 16+  </td>
+			
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			<td style="color:white"onclick=loadImage('','2')>  </td>
+			 
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			<td style="color:white"onclick=loadImage('3W_BBvsSB_25x_16-25BB','2')> v2.5x 16+ </td>
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			<th bgcolor="white"></th>
+
+
+
+			<td style="color:white"onclick=loadImage('','1')>  </td>
+			
+					
+		  	<td style="color:white"onclick=loadImage('HU_BBvsSB_vs3x_16-25BB','1')> vs3x 16+ </td>
+		  	<td style="color:white"onclick=loadImage('','2')>  </td>
+		
+						
+		</tr>
+		
+		<tr>
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			<td style="color:white"onclick=loadImage('3W_SBvsBU_vs3x_12-16','2')> vs3x 12-16 </td>
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			
+			<td style="color:white"onclick=loadImage('3W_BBvsBU_3x_12-16BB','2')> vs3x 12-16  </td>
+			
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			<td style="color:white"onclick=loadImage('','2')>  </td>
+			 
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			<td style="color:white"onclick=loadImage('3W_BBvsSB_25x_14-16BB','2')> v2.5x 14-16 </td>
+			<td style="color:white"onclick=loadImage('','1')>  	</td>
+			<th bgcolor="white"></th>
+
+
+
+			<td style="color:white"onclick=loadImage('','1')>  </td>
+			
+					
+		  	<td style="color:white"onclick=loadImage('HU_BBvsSB_vs3x','1')> vs3x 12-16 </td>
+		  	<td style="color:white"onclick=loadImage('','2')>  </td>
+		
+						
+		</tr>
+		
+		
+		
+
+	
+    </tbody>                
+  </table>
+		<h5>TBP Spin & Go Charts @TeamBasPoker</h5>	
+		  
+		</div>
+				<div id="clear">
+         <div id="back" >
+	</div>
+        <div id="image">
+		
+		
+		<img id="inashpush" src="nashpush.jpg" alt="" /> 
+		<img id="inashcall" src="nashcall.jpg" alt="" />
+
+
+		<img id="i3W_SBvsBB_0-8BB" src="3W_SBvsBB_0-8BB.png" alt="" />
+		<img id="i3W_SBvsBB_8-10BB" src="3W_SBvsBB_8-10BB.png" alt="" />
+		<img id="i3W_SBvsBB_10-12BB" src="3W_SBvsBB_10-12BB.png" alt="" />
+		<img id="i3W_SBvsBB_12-14BB" src="3W_SBvsBB_12-14BB.png" alt="" />
+		<img id="i3W_SBvsBB_14-16BB" src="3W_SBvsBB_14-16BB.png" alt="" /> 
+		<img id="i3W_SBvsBB_16-20BB" src="3W_SBvsBB_16-20BB.png" alt="" /> 
+		<img id="i3W_SBvsBB_20-25BB" src="3W_SBvsBB_20-25BB.png" alt="" /> 
+		
+	
+		<img id="iHU_SB_0-6BB" src="HU_SB_0-6BB.png" alt="" />
+		<img id="iHU_SB_6-8BB" src="HU_SB_6-8BB.png" alt="" />
+		<img id="iHU_SB_8-10BB" src="HU_SB_8-10BB.png" alt="" />
+		<img id="iHU_SB_10-12BB" src="HU_SB_10-12BB.png" alt="" />
+		<img id="iHU_SB_12-14BB" src="HU_SB_12-14BB.png" alt="" /> 
+		<img id="iHU_SB_14-16BB" src="HU_SB_14-16BB.png" alt="" />
+		<img id="iHU_SB_16-20BB" src="HU_SB_16-20BB.png" alt="" /> 
+		<img id="iHU_SB_20-25BB" src="HU_SB_20-25BB.png" alt="" />  
+		
+		<img id="iHU_BBvsLIMP_0-8BB" src="HU_BBvsLIMP_0-8BB.png" alt="" />
+		<img id="iHU_BBvsLIMP_8-10BB" src="HU_BBvsLIMP_8-10BB.png" alt="" />
+		<img id="iHU_BBvsLIMP_10-12BB" src="HU_BBvsLIMP_10-12BB.png" alt="" />
+		<img id="iHU_BBvsLIMP_12-14BB" src="HU_BBvsLIMP_12-14BB.png" alt="" />
+		<img id="iHU_BBvsLIMP_14-16BB" src="HU_BBvsLIMP_14-16BB.png" alt="" />
+		<img id="iHU_BBvsLIMP_16-20BB" src="HU_BBvsLIMP_16-20BB.png" alt="" />
+		<img id="iHU_BBvsLIMP_20-25BB" src="HU_BBvsLIMP_20-25BB.png" alt="" />  
+
+		<img id="iHU_BBvsSB_vs3x" src="HU_BBvsSB_vs3x.png" alt="" />
+		<img id="iHU_BBvsSB_vs3x_16-25BB" src="HU_BBvsSB_vs3x_16-25BB.png" alt="" />
+		<img id="iHU_BBvsSB_vsAI" src="HU_BBvsSB_vsAI.png" alt="" />
+		<img id="iHU_BBvsMR_0-10BB" src="HU_BBvsMR_0-10BB.png" alt="" />
+		<img id="iHU_BBvsMR_10-12BB" src="HU_BBvsMR_10-12BB.png" alt="" />
+		<img id="iHU_BBvsMR_12-14BB" src="HU_BBvsMR_12-14BB.png" alt="" />
+		<img id="iHU_BBvsMR_14-16BB" src="HU_BBvsMR_14-16BB.png" alt="" />
+		<img id="iHU_BBvsMR_16-20BB" src="HU_BBvsMR_16-20BB.png" alt="" />
+		<img id="iHU_BBvsMR_20-25BB" src="HU_BBvsMR_20-25BB.png" alt="" />
+
+		<img id="i3W_BBvsBU_LIMP_0-10BB" src="3W_BBvsBU_LIMP_0-10BB.png" alt="" />
+		<img id="i3W_BBvsBU_LIMP_10-13BB" src="3W_BBvsBU_LIMP_10-13BB.png" alt="" />
+		<img id="i3W_BBvsBU_LIMP_13-16BB" src="3W_BBvsBU_LIMP_13-16BB.png" alt="" />
+		<img id="i3W_BBvsBU_LIMP_16-20BB" src="3W_BBvsBU_LIMP_16-20BB.png" alt="" />  
+		<img id="i3W_BBvsSB_LIMP_20-25BB" src="3W_BBvsSB_LIMP_20-25BB.png" alt="" />
+		
+
+		<img id="i3W_BBvsBU_LIMP_0-8BB" src="3W_BBvsBU_LIMP_0-8BB.png" alt="" />
+		<img id="i3W_BBvsBU_LIMP_8-10BB" src="3W_BBvsBU_LIMP_8-10BB.png" alt="" />
+		<img id="i3W_BBvsBU_LIMP_10-12BB" src="3W_BBvsBU_LIMP_10-12BB.png" alt="" />
+		<img id="i3W_BBvsBU_LIMP_12-14BB" src="3W_BBvsBU_LIMP_12-14BB.png" alt="" />
+		<img id="i3W_BBvsBU_LIMP_14-16BB" src="3W_BBvsBU_LIMP_14-16BB.png" alt="" />
+		<img id="i3W_BBvsBU_LIMP_16-20BB" src="3W_BBvsBU_LIMP_16-20BB.png" alt="" />
+		<img id="i3W_BBvsBU_LIMP_20-25BB" src="3W_BBvsBU_LIMP_20-25BB.png" alt="" />
+		
+
+		 
+		<img id="i3W_BBvs2pp_LIMP_0-8BB" src="3W_BBvs2pp_LIMP_0-8BB.png" alt="" />
+		<img id="i3W_BBvs2pp_LIMP_8-10BB" src="3W_BBvs2pp_LIMP_8-10BB.png" alt="" />
+		<img id="i3W_BBvs2pp_LIMP_10-12BB" src="3W_BBvs2pp_LIMP_10-12BB.png" alt="" />
+		<img id="i3W_BBvs2pp_LIMP_12-14BB" src="3W_BBvs2pp_LIMP_12-14BB.png" alt="" />
+		<img id="i3W_BBvs2pp_LIMP_14-16BB" src="3W_BBvs2pp_LIMP_14-16BB.png" alt="" />
+		<img id="i3W_BBvs2pp_LIMP_16-20BB" src="3W_BBvs2pp_LIMP_16-20BB.png" alt="" />
+		<img id="i3W_BBvs2pp_LIMP_20-25BB" src="3W_BBvs2pp_LIMP_20-25BB.png" alt="" />
+
+		
+		<img id="i3W_BBvsBUSB_vsAI" src="3W_BBvsBUSB_vsAI.png" alt="" />
+		<img id="i3W_BBvsBUSB_MR_8-10BB" src="3W_BBvsBUSB_MR_8-10BB.png" alt="" />
+		<img id="i3W_BBvsBUSB_MR_10-12BB" src="3W_BBvsBUSB_MR_10-12BB.png" alt="" />
+		<img id="i3W_BBvsBUSB_MR_12-14BB" src="3W_BBvsBUSB_MR_12-14BB.png" alt="" />
+		<img id="i3W_BBvsBUSB_MR_14-16BB" src="3W_BBvsBUSB_MR_14-16BB.png" alt="" />
+		<img id="i3W_BBvsBUSB_MR_16-20BB" src="3W_BBvsBUSB_MR_16-20BB.png" alt="" />
+		<img id="i3W_BBvsBUSB_MR_20-25BB" src="3W_BBvsBUSB_MR_20-25BB.png" alt="" />
+
+		<img id="i3W_BBvsSB_vsAI" src="3W_BBvsSB_vsAI.png" alt="" />
+		<img id="i3W_BBvsSB_2x_14-16BB" src="3W_BBvsSB_2x_14-16BB.png" alt="" />
+		<img id="i3W_BBvsSB_2x_12-14BB" src="3W_BBvsSB_2x_12-14BB.png" alt="" />
+		<img id="i3W_BBvsSB_2x_10-12BB" src="3W_BBvsSB_2x_10-12BB.png" alt="" />
+		<img id="i3W_BBvsSB_25x_14-16BB" src="3W_BBvsSB_25x_14-16BB.png" alt="" />
+		<img id="i3W_BBvsSB_25x_16-25BB" src="3W_BBvsSB_25x_16-25BB.png" alt="" />
+		<img id="i3W_BBvsSB_3x_16-25BB" src="3W_BBvsSB_3x_16-25BB.png" alt="" />
+	
+
+		<img id="i3W_BBvsSB_LIMP_0-8BB" src="3W_BBvsSB_LIMP_0-8BB.png" alt="" />
+		<img id="i3W_BBvsSB_LIMP_0-10BB" src="3W_BBvsSB_LIMP_0-10BB.png" alt="" />
+		<img id="i3W_BBvsSB_LIMP_10-13BB" src="3W_BBvsSB_LIMP_10-13BB.png" alt="" />
+		<img id="i3W_BBvsSB_LIMP_13-16BB" src="3W_BBvsSB_LIMP_13-16BB.png" alt="" />
+		<img id="i3W_BBvsSB_LIMP_16-20BB" src="3W_BBvsSB_LIMP_16-20BB.png" alt="" />
+		<img id="i3W_BBvsSB_LIMP_20-25BB" src="3W_BBvsSB_LIMP_20-25BB.png" alt="" />
+		
+
+		<img id="i3W_BBvsSB_Limp_0-8BB" src="3W_BBvsSB_Limp_0-8BB.png" alt="" />
+		<img id="i3W_BBvsSB_Limp_8-10BB" src="3W_BBvsSB_Limp_8-10BB.png" alt="" />
+		<img id="i3W_BBvsSB_Limp_10-12BB" src="3W_BBvsSB_Limp_10-12BB.png" alt="" />
+		<img id="i3W_BBvsSB_Limp_12-14BB" src="3W_BBvsSB_Limp_12-14BB.png" alt="" />
+		<img id="i3W_BBvsSB_Limp_14-16BB" src="3W_BBvsSB_Limp_14-16BB.png" alt="" />
+		<img id="i3W_BBvsSB_Limp_16-20BB" src="3W_BBvsSB_Limp_16-20BB.png" alt="" />
+		<img id="i3W_BBvsSB_Limp_20-25BB" src="3W_BBvsSB_Limp_20-25BB.png" alt="" />
+
+
+		<img id="i3W_SBvsBU_Limp_0-8BB" src="3W_SBvsBU_Limp_0-8BB.png" alt="" />
+		<img id="i3W_SBvsBU_Limp_8-10BB" src="3W_SBvsBU_Limp_8-10BB.png" alt="" />		
+		<img id="i3W_SBvsBU_Limp_10-12BB" src="3W_SBvsBU_Limp_10-12BB.png" alt="" />
+		<img id="i3W_SBvsBU_limp_12-14BB" src="3W_SBvsBU_limp_12-14BB.png" alt="" />
+		<img id="i3W_SBvsBU_limp_14-16BB" src="3W_SBvsBU_limp_14-16BB.png" alt="" />
+		<img id="i3W_SBvsBU_limp_16-20BB" src="3W_SBvsBU_limp_16-20BB.png" alt="" />
+		<img id="i3W_SBvsBU_limp_20-25BB" src="3W_SBvsBU_limp_20-25BB.png" alt="" />
+		
+		
+		<img id="i3W_SBvsBU_vsAI" src="3W_SBvsBU_vsAI.png" alt="" />
+		<img id="i3W_SBvsBU_MR_0-8BB" src="3W_SBvsBU_MR_0-8BB.png" alt="" />
+		<img id="i3W_SBvsBU_MR_8-10BB" src="3W_SBvsBU_MR_8-10BB.png" alt="" />
+		<img id="i3W_SBvsBU_MR_10-12BB" src="3W_SBvsBU_MR_10-12BB.png" alt="" />
+		<img id="i3W_SBvsBU_MR_12-14BB" src="3W_SBvsBU_MR_12-14BB.png" alt="" />
+		<img id="i3W_SBvsBU_MR_14-16BB" src="3W_SBvsBU_MR_14-16BB.png" alt="" />
+		<img id="i3W_SBvsBU_MR_16-20BB" src="3W_SBvsBU_MR_16-20BB.png" alt="" />
+		<img id="i3W_SBvsBU_MR_20-25BB" src="3W_SBvsBU_MR_20-25BB.png" alt="" />
+		<img id="i3W_SBvsBU_vs3x_12-16" src="3W_SBvsBU_vs3x_12-16.png" alt="" />
+		<img id="i3W_SBvsBU_vs3x_16-25" src="3W_SBvsBU_vs3x_16-25.png" alt="" />
+		
+		<img id="i3W_BBvsBU_vsAI" src="3W_BBvsBU_vsAI.png" alt="" />
+		<img id="i3W_BBvsBU_MR_8-10BB" src="3W_BBvsBU_MR_8-10BB.png" alt="" />
+		<img id="i3W_BBvsBU_MR_10-12BB" src="3W_BBvsBU_MR_10-12BB.png" alt="" />
+		<img id="i3W_BBvsBU_MR_12-14BB" src="3W_BBvsBU_MR_12-14BB.png" alt="" />
+		<img id="i3W_BBvsBU_MR_14-16BB" src="3W_BBvsBU_MR_14-16BB.png" alt="" />
+		<img id="i3W_BBvsBU_MR_16-20BB" src="3W_BBvsBU_MR_16-20BB.png" alt="" />
+		<img id="i3W_BBvsBU_MR_20-25BB" src="3W_BBvsBU_MR_20-25BB.png" alt="" />
+		<img id="i3W_BBvsBU_3x_12-16BB" src="3W_BBvsBU_3x_12-16BB.png" alt="" />
+		<img id="i3W_BBvsBU_3x_16-25BB" src="3W_BBvsBU_3x_16-25BB.png" alt="" />
+		
+		
+		<img id="i3W_BU_0-8BB" src="3W_BU_0-8BB.png" alt="" />
+		<img id="i3W_BU_8-10BB" src="3W_BU_8-10BB.png" alt="" />
+		<img id="i3W_BU_10-12BB" src="3W_BU_10-12BB.png" alt="" />
+		<img id="i3W_BU_12-14BB" src="3W_BU_12-14BB.png" alt="" />
+		<img id="i3W_BU_14-16BB" src="3W_BU_14-16BB.png" alt="" />
+		<img id="i3W_BU_16-20BB" src="3W_BU_16-20BB.png" alt="" />
+		<img id="i3W_BU_20-25BB" src="3W_BU_20-25BB.png" alt="" />
+	
+		
+	</div>
+	
+	<div id="image2">
+		<img id="l1" src="LEGEND_BU_3WAY.jpg" alt="" />
+		<img id="l2" src="LEGEND_BBvsLimp_HU.jpg" alt="" />
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+		<!-- Verstecken aller Bilder nach dem Laden der Seite -->
+         $(document).ready(function() { 
+			HideOld('image');
+			HideOld('image2');
+		 });
+		
+		function loadImage(img, legend) 
+		{
+			if (img){
+					HideOld('image');
+					ShowNew('i', img);
+			}
+			else
+				HideOld('image');
+			
+			
+			if(legend){
+					HideOld('image2');
+					ShowNew('l', legend);
+			}
+			else
+					HideOld('image2');
+		}
+		
+		function ShowNew(type, img_id)
+		{
+			 $("#"+ type +"" +img_id).show();
+		}
+		
+		function HideOld(div_id)
+		{
+			 $("#"+div_id).children().hide();
+		}
+    </script>
+
+<script src="jquery.js"></script>
+        <script>
+        var currFFZoom = 1;
+        var currIEZoom = 100;
+
+        function plus(){
+            //alert('sad');
+                var step = 0.02;
+                currFFZoom += step;
+                $('body').css('MozTransform','scale(' + currFFZoom + ')');
+                var stepie = 2;
+                currIEZoom += stepie;
+                $('body').css('zoom', ' ' + currIEZoom + '%');
+
+        };
+        function minus(){
+            //alert('sad');
+                var step = 0.02;
+                currFFZoom -= step;
+                $('body').css('MozTransform','scale(' + currFFZoom + ')');
+                var stepie = 2;
+                currIEZoom -= stepie;
+                $('body').css('zoom', ' ' + currIEZoom + '%');
+        };
+    </script>
+<script>
+
+
+    $('td').on('click', function(){
+
+        $('td').css('background-color', '');
+        $(this).css('background-color', '#89cff0');
+
+    })
+    </script>
+
+
